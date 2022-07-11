@@ -1,3 +1,7 @@
 export function slugger (...args) {
-  return args.replace(/\s+/g, '-').join('-').toLowerCase()
+
+    const newArr = args.map(element => {
+        return element.replace(/\s+/g, '-')
+    });
+  return newArr.join('-').toLowerCase()
 }
