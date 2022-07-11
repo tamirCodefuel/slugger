@@ -1,3 +1,3 @@
 export function slugger (...args) {
-  return args.join('-').toLowerCase()
+  return args.replace(/\s+/g, '-').join('-').toLowerCase()
 }
